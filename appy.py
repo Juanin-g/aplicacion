@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pyplot
+import matplotlib.pyplot as pyplot
 #leer datos
 titanic = pd.read_csv("titanic.csv")
  # Crear un gráfico con Plotly (por ejemplo, un gráfico de barras de la edad)
