@@ -10,11 +10,11 @@ st.sidebar.title("Analisis de datos")
 
 # Pestañas
 tab1, tab2 = st.tabs(["Cuadros de desglose", "Graficas"])
-with tab1
+with tab1:
   st.header("informaciòn general")
   st.plotly_chart(titanic.head())
   st.plotly_chart(titanic.info())
 
-with tab2
+with tab2:
   st.plotly_chart(titanic.plot(subplots= True, figsize=(15, 12), sharex= False, sharey=False))
 
