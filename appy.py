@@ -3,6 +3,8 @@ import pandas as pd
 import pyplot
 #leer datos
 titanic = pd.read_csv("titanic.csv")
+ # Crear un gráfico con Plotly (por ejemplo, un gráfico de barras de la edad)
+fig = px.histogram(titanic, x="Age")
 
 # Configuración de la página
 st.set_page_config(page_title="Dashboars", layout="wide")
@@ -16,5 +18,7 @@ with tab1:
   st.plotly_chart(titanic.info())
 
 with tab2:
-  st.pyplot(fig)(titanic.plot(subplots= True, figsize=(15, 12), sharex= False, sharey=False))
 
+
+# Mostrar el gráfico en Streamlit
+  st.plotly_chart(fig)
