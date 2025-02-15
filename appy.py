@@ -6,7 +6,7 @@ import plotly.express as px  # Importar plotly para los gráficos interactivos
 titanic = pd.read_csv("titanic.csv")
 
 # Crear un gráfico con Plotly (por ejemplo, un gráfico de barras de la edad)
-fig = px.histogram(titanic, x="Age")
+fig = px.histogram(titanic, x="age")
 
 # Configuración de la página
 st.set_page_config(page_title="Dashboard", layout="wide")
