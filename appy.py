@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+import pyplot
 #leer datos
 titanic = pd.read_csv("titanic.csv")
 
@@ -16,5 +16,5 @@ with tab1:
   st.plotly_chart(titanic.info())
 
 with tab2:
-  st.plotly_chart(titanic.plot(subplots= True, figsize=(15, 12), sharex= False, sharey=False))
+  st.pyplot(fig)(titanic.plot(subplots= True, figsize=(15, 12), sharex= False, sharey=False))
 
